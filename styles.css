@@ -98,7 +98,6 @@ article {
         justify-self: center;
         display: flex;
         gap:2rem;
-        flex-wrap: wrap;
         li {
             transition: transform 300ms;
         }
@@ -233,5 +232,10 @@ footer {
 @media (width<380px) {
     html {
         font-size: 10px;
+    }
+}
+@media (height<320px) {
+    #navbar {
+        position: relative;
     }
 }
