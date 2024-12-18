@@ -33,6 +33,9 @@ a:active {
 ul {
     list-style: none;
 }
+abbr {
+    text-decoration: none;
+}
 article {
     display: flex;
     flex-direction: column;
@@ -44,7 +47,6 @@ article {
     padding:2rem;
     line-height: 2rem;
 }
-
 #navbar {
     font-family:sans-serif;
     background-color: var(--verydark-green);
