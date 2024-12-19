@@ -136,6 +136,10 @@ article {
         h2 {
             color: var(--light-green);
         }
+        p {
+            width: 95%;
+            margin: auto;
+        }
         >*{
             text-align: center;
             justify-self: center;
