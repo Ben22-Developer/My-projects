@@ -16,6 +16,10 @@
 body {
     background-color: rgb(181, 181, 181);
 }
+p {
+    font-size: 1.5rem;
+    line-height: 2.7rem;
+}
 a {
     text-decoration: none;
     background-color:var(--button-green);
@@ -110,6 +114,7 @@ article {
     .emoji-div-container{
         grid-area: comp-emoji;
         justify-self: center;
+        align-self: end;
         background: linear-gradient(var(--dark-green),var(--light-green));
         transition: transform 300ms;
         .emoji-div {
@@ -236,8 +241,22 @@ footer {
         font-size: 10px;
     }
 }
-@media (height<320px) {
+@media (height<480px) {
     #navbar {
         position: relative;
+    }
+}
+@media (aspect-ratio <= 2) or (height<480px) {
+    #welcome-section {
+        padding:2rem 0;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        .emoji-div-container {
+        align-self: unset;
+        }
     }
 }
