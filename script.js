@@ -1,7 +1,7 @@
 let scroll;
 
 document.addEventListener('scroll', () => {
-   if (scrollY > scroll) {
+   if (scrollY > scroll && (scrollY > 40)) {
     document.getElementById('navbar').classList.add('hidden');
    }
    else {
