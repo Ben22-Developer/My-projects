@@ -52,12 +52,13 @@ article {
     line-height: 2rem;
 }
 #navbar {
+    position: sticky;
     font-family:sans-serif;
     background-color: var(--verydark-green);
     color: var(--white-color);
-    position: sticky;
     top: 0;
     z-index: 5;
+    transition: transform 500ms;
     ul {
     display: flex;
     justify-content: end;
@@ -88,6 +89,9 @@ article {
         }
         }
     }
+}
+.hidden {
+    transform: translateY(-100%);
 }
 #welcome-section {
     height: 100vh;
